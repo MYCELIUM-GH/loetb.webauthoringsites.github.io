@@ -1,1 +1,1 @@
-Hello, Chanda. Fell free to check my assignments here:)
+Hello, Chanda. Feel free to check my assignments here:)
