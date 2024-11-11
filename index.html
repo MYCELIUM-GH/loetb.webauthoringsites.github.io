@@ -6,11 +6,12 @@
         <title>IRONBLOOD | Main</title>
         <style>
             * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
             }
             .red {
+                
                 color: #b12e2e;
             }
             body {
@@ -40,6 +41,10 @@
             }
             main section:first-of-type {
                 border-bottom: 20px solid #24232B;
+            }
+            main section {
+                max-width: 900px;
+                margin: auto;
             }
             main section h2 {
                 font-family: Georgia, Times, 'Times New Roman', serif;
@@ -110,6 +115,12 @@
             }
             footer a {
                 color: white;
+            }
+            .q:before {
+                content: " ''";
+            }
+            .q:after {
+                content: "''";
             }
         </style>
     </head>
@@ -314,7 +325,13 @@
                     Stay tuned for more updates on the upcoming tournaments and other 
                     exciting news in the gaming community!
                 </p>
+                <p>
+                    Another way to <span class="q">quote text</span>
+                </p>
+                <p>The <abbr title="World Health Organization">WHO</abbr> was established in 1948.</p>
+
             </section>
+            
         </main>
         <!-- ========================================================================= -->
         <footer>
