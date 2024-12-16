@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Petsy PickUp | Landing</title>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./scripts.js"></script>
+        <!-- HEADER / NAVBAR -->
+        <header>
+            <img src="./logo.png" loading="lazy" alt="Petsy logo">
+            <div class="divider"></div>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html#fs">For Specialists</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="divider"></div>
+        </header>
+        <!-- MAIN CONTENT -->
+        <main>
+            <img src="./landbg.png" class="bg-img" alt="Cat and dog background">
+            <!-- BIG HEADING / BUTTON -->
+            <section class="heading">
+                <h1 class="heading-title">
+                    Welcome to <span class="highlight">Petsy PickUp</span>,<br>
+                    Your one-stop solution for exceptional pet services
+                </h1>
+                <p class="heading-text">
+                    From grooming and walking to vet visits, Petsy PickUp&copy; simplifies 
+                    the process of finding the right professional, scheduling appointments,
+                    and making payments.
+                </p>
+                <a class="join-button">
+                    GET STARTED
+                </a>
+            </section>
+            <!-- FIRST TEXT AREA -->
+            <section class="description">
+                <h3 class="section-h3">
+                    Everything at once for you and them
+                </h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra metus 
+                    nec lectus malesuada molestie. Aliquam erat volutpat. Quisque eget sagittis 
+                    ipsum. Aliquam dictum accumsan porttitor. Donec id libero id massa iaculis 
+                    ultrices. Sed ornare leo sit amet sapien lacinia, non pharetra diam cursus. 
+                    Pellentesque et luctus turpis. Suspendisse potenti.
+                </p>
+                <p>
+                    Nunc dignissim placerat 
+                    ex ac vulputate. Nullam et nulla id augue pulvinar condimentum elementum 
+                    sed risus. Nam lobortis odio et aliquet consectetur. Vestibulum congue neque 
+                    in metus egestas, eget feugiat dolor blandit. Aliquam hendrerit, lacus eu 
+                    tincidunt elementum, est lectus malesuada nulla, eu imperdiet magna quam nec 
+                    justo. Cras posuere congue ornare. Fusce congue ultrices nibh, nec elementum 
+                    purus aliquam non. Suspendisse cursus id nisl nec ultrices.
+                </p>
+                <img src="./path.jpg" class="path" alt="Paws path on the background">
+              
+            </section>
+            <!-- SERVICES DROPDOWN -->
+            <section class="services darker">
+                <h3 class="section-h3">
+                    Our Services
+                </h3>
+                <ul id="accordion" class="accordion">
+                    <!-- WALK PLANING -->
+                    <li>
+                        <div class="link">Walk planing<i class="fa fa-chevron-down"></i></div>
+                        <ul class="submenu">
+                            <li>
+                                <p>
+                                    Get your pet the exercise and fresh air they need with our custom 
+                                    walking schedules. Whether your pet needs a quick stroll or a longer, 
+                                    more active walk, you can choose the duration and intensity that best 
+                                    suits their health and energy levels. 
+                                </p>
+                                <p>
+                                    This service helps pet owners keep their pets active, happy, and 
+                                    fit—even when they're busy.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- VET CONSULTATIONS -->
+                    <li>
+                        <div class="link">Veterinary Consultations<i class="fa fa-chevron-down"></i></div>
+                        <ul class="submenu">
+                            <li>
+                                <p>
+                                    Keep your pet healthy with expert vet consultations. Our service provides professional 
+                                    advice on your pet's health. You can get guidance on diagnosis, treatment, 
+                                    or general care. 
+                                </p>
+                                <p>
+                                    You can also choose home visits. We make it easy to give 
+                                    your pet the medical attention they deserve.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- PET SITTING -->
+                    <li>
+                        <div class="link">Pet Sitting<i class="fa fa-chevron-down"></i></div>
+                        <ul class="submenu">
+                            <li>
+                                <p>
+                                    Rely on us to take care of your pet while you're away. We take care of your pet 
+                                    when you're away. You can choose the care option that suits you. 
+                                </p>
+                                <p>
+                                    This could be having a trusted sitter stay in your home or entrusting your pet 
+                                    to the sitter's residence. Your pet will get the care and attention they need, 
+                                    so you can relax.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- GROOMING -->
+                    <li>
+                        <div class="link">Grooming<i class="fa fa-chevron-down"></i></div>
+                        <ul class="submenu">
+                            <li>
+                                <p>
+                                    Keep your pet looking and feeling great with our grooming services. 
+                                    We provide everything your pet needs for a fresh, clean look, 
+                                    from haircuts to nail trimming. 
+                                </p>
+                                <p>
+                                    We help you choose the right groomer for your pet. 
+                                    You can see the work of each groomer to find the right one for your pet.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- PSYCHOLOGY -->
+                    <li>
+                        <div class="link">Canine Behavior & Psychology Consultations<i class="fa fa-chevron-down"></i></div>
+                        <ul class="submenu">
+                            <li>
+                                <p>
+                                    Get expert advice from professional dog trainers and animal behaviorists. 
+                                    Our service helps you address behavioral issues, improve training techniques, 
+                                    and understand your pet's psychological needs. You can also opt for in-home 
+                                    consultations.
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <!-- ABOUT US -->
+            <section class="about-us">
+                <h3 class="section-h3">
+                    Why Choose Petsy PickUp?
+                </h3>
+                <ul>
+                    <li>
+                        <h4 class="highlight">Verified Specialists You Can Trust:</h4> 
+                        We carefully verify each specialist's experience and skills to ensure they meet 
+                        our high standards. Certifications are reviewed where applicable.
+                    </li>
+                    <li>
+                        <h4 class="highlight">Simple Verification:</h4> 
+                        Specialists undergo a quick background check to confirm their 
+                        reliability and expertise in pet care.
+                    </li>
+                    <li>
+                        <h4 class="highlight">Client Reviews Included:</h4> 
+                        Portfolios feature client reviews and ratings, adding trust to your specialist choice.
+                    </li>
+                    <li>
+                        <h4 class="highlight">Honest Reviews and Ratings:</h4> 
+                        After each service, clients provide ratings and reviews, offering genuine feedback.
+                    </li>
+                    <li>
+                        <h4 class="highlight">Showcasing Expertise through Portfolios:</h4> 
+                        Specialists can upload photos or service descriptions to showcase their expertise.
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <div class="social-icons">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>
