@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolution of HTML and CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button><a href="index.html">Back to main page</a></button>
+    </header>
+    <main>
+        <section>
+            <h1>The Evolution of HTML and CSS</h1>
+            <div class="dd"></div>
+            <h2>HTML</h2>
+            <p>HTML (HyperText Markup Language) was created by Tim Berners-Lee in 1991. It is the standard markup language for creating web pages and web applications. HTML5, the latest version, was published in October 2014 and introduced new elements, attributes, and behaviors.</p>
+        </section>
+        <section>
+            <h2>CSS</h2>
+            <p>CSS (Cascading Style Sheets) was first proposed by Håkon Wium Lie on October 10, 1994. It is a style sheet language used for describing the presentation of a document written in HTML or XML. CSS3, the latest version, was released in 1999 and brought new features like rounded corners, shadows, gradients, transitions, and animations.</p>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p> <span id="year"></span> &copy; IRONBLOOD. All rights reserved.</p>
+            <p>
+                <a href="#">Terms of Service</a> | 
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Contact Us</a>
+            </p>
+            <p>Follow us on 
+                <a href="#">Twitter</a>, 
+                <a href="#">Facebook</a>, and 
+                <a href="#">Instagram</a>
+            </p>
+        </div>
+        <script>
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+</body>
+</html>
