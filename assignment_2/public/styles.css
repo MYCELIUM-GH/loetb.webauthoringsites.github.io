@@ -1,0 +1,221 @@
+:root {
+    --bg_dark: #24232B;
+    --solid_red: #b12e2e;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.dd {
+    background-color: white;
+    height: 2px;
+    width: auto;
+    margin-bottom: 15px;
+}
+.red {
+    color: var(--solid_red);
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+header {
+    background-color: var(--bg_dark);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+header img {
+    width: 50px;
+    height: auto;
+}
+header h1 {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+    padding-left: 10px;
+    color: #aeaeae;
+}
+header button {
+    background-color: var(--solid_red);
+    color: white;
+    border: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: auto;
+}
+header button:hover {
+    background-color: rgba(145, 25, 25, 0.341);
+}
+header button a {
+    text-decoration: none;
+    color: white;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+main {
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0px 5px 5px #aeaeae;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: var(--bg_dark);
+}
+main section {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    color: white;
+}
+main section h2,section h2 {
+    font-size: 1.75em;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+main section h3 {
+    font-size: 1.5em;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+main section p, section p{
+    font-size: 1.25em;
+    margin: 10px 20px;
+    padding-bottom: 10px;
+}
+main section p:last-child {
+    padding-bottom: 20px;
+}
+section blockquote {
+    font-size: 1.25em;
+    margin: 10px 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-left: 5px solid var(--solid_red);
+}
+main section button {
+    font-size: 1.25em;
+    border: 0;
+    line-height: 2.5;
+    text-shadow: 1px 1px 1px #212121;
+    border-radius: 30px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    background-color: #6430cd;
+}
+main section button:hover {
+    background-color: #9560ff;
+}
+main section button a {
+    text-decoration: none;
+    color: white;
+}
+main section table {
+    font-size: 1.25em;
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+}
+main section table caption {
+    text-align: left;
+}
+main section ul, ol {
+    font-size: 1.25em;
+    padding: 10px;
+    margin-left: 20px;
+}
+main section ul, ol li {
+    margin-left: 10px;
+}
+main section ul:last-child {
+    margin-bottom: 20px;
+}
+footer {
+    font-size: 1.25em;
+    background-color: #24232B; 
+    color: white;
+    padding: 20px; 
+    text-align: center;
+}
+footer a {
+    color: white;
+}
+footer a:hover {
+    color: #aeaeae;
+}
+.contact-form {
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(145, 25, 25, 0.341);
+}
+.contact-form h2 {
+    margin-bottom: 15px;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid var(--solid_red);
+    border-radius: 5px;
+}
+.contact-form button {
+    background: var(--solid_red);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background: rgba(145, 25, 25, 0.341);
+}
+@media only screen and (min-width: 800px) {
+    body {
+        font-size: 18px;
+    }
+    header h1 {
+        font-size: 1.6em;
+    }
+    main section h2, section h2 {
+        font-size: 1.4em;
+    }
+    main section h3 {
+        font-size: 1.2em;
+    }
+    main section p, section p {
+        font-size: 1em;
+    }
+    main section button {
+        font-size: 1em;
+    }
+    main section table {
+        font-size: 1em;
+    }
+    main section ul, ol {
+        font-size: 1em;
+    }
+    section {
+        max-width: 50%;
+        margin: auto;
+    }
+    footer {
+        font-size: 1em;
+    }
+}
