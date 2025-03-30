@@ -300,7 +300,7 @@ body {
 }
 /* #endregion */
 
-/* #region ==== VALUE PROPOSITION SECTION*/
+/* #region ==== VALUE PROPOSITION SECTION */
 .value-proposition__container {
     display: flex;
     flex-direction: column;
@@ -330,7 +330,7 @@ body {
 }
 .value-proposition__title {
     margin-bottom: 1.5rem;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 600;
     font-family: Roboto, sans-serif;
     margin-left: 10px;
@@ -724,7 +724,6 @@ body {
 
 /* #region ==== MEDIA SECTION */
 @media screen and (max-width: 768px) {
-    
     /* NAVBAR */
     .navTrigger {
         display: block;
