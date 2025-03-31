@@ -3,48 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="We are creating stuff.">
+        <meta property="og:locale" content="en_IE">
+        <meta property="og:type" content="website">
         <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="./content/icons/icon_32x32.png" sizes="32x32">
+        <link rel="icon" href="./content/icons/icon_32x32.png" sizes="192x192">
         <title>Home | Neural Dynamics</title>
         <!-- IMPORT JQUERY -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <!-- PARALLAX SCRIPT -->
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-                // REGISTER GSAP PLUGINS
-                gsap.registerPlugin(ScrollTrigger);
-                // PARALLAX LAYERS
-                document.querySelectorAll('[data-parallax-layers]').forEach((triggerElement) => {
-                    let tl = gsap.timeline({
-                        scrollTrigger: {
-                            trigger: triggerElement,
-                            start: "0% 0%",
-                            end: "100% 0%",
-                            scrub: 0
-                        }
-                    });
-                    const layers = [
-                        { layer: "1", yPercent: 70 },
-                        { layer: "2", yPercent: 55 },
-                        { layer: "3", yPercent: 40 },
-                        { layer: "4", yPercent: 10 }
-                    ];
-                    layers.forEach((layerObj, idx) => {
-                        tl.to(
-                            triggerElement.querySelectorAll(`[data-parallax-layer="${layerObj.layer}"]`),{
-                                yPercent: layerObj.yPercent,
-                                ease: "none"
-                            },
-                            idx === 0 ? undefined : "<"
-                        );
-                    });
-                });
-            });
-            /* LENIS */
-            const lenis = new Lenis();
-            lenis.on('scroll', ScrollTrigger.update);
-            gsap.ticker.add((time) => {lenis.raf(time * 1000);});
-            gsap.ticker.lagSmoothing(100);
-        </script>
     </head>
     <body>
         <!-- NAVBAR -->
@@ -69,10 +36,8 @@
                 </span>
             </div>
         </nav>
-        <div class="parallax">
-            <section class="parallax__header">
-                <div class="parallax__visuals">
-                    <div class="parallax__black-line-overflow"></div>
+        <section class="hero">
+                <div class="hero_visuals">
                     <!-- PARALLAX LAYERS -->
                     <div data-parallax-layers class="parallax__layers">
                         <!-- LAYER 1 - BACKGROUND -->
@@ -130,8 +95,6 @@
                             class="parallax__layer-img"
                         />
                     </div>
-                    <!-- SUBLAYER - FADE -->
-                    <div class="parallax__fade"></div>
                 </div>
             </section>
             <!-- MAIN CONTENT -->
@@ -185,8 +148,7 @@
                 <div class="slider__container">
                     <img src="./content/images/path.svg">
                 </div>
-            </section>
-        </div>
+        </section>
         <!-- FOOTER -->
         <footer class="footer">
                 <div class="footer__links">

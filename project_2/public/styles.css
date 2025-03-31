@@ -367,7 +367,7 @@ body {
 }
 /* #endregion */
 
-/* #region ==== PARALLAX EFFECT */
+/* #region ==== HERO */
 .cloneable {
     padding: var(--container-padding);
     justify-content: center;
@@ -393,9 +393,9 @@ body {
         transparent 100%
     );
 }
-.parallax__header {
+section.hero {
     z-index: 2;
-    padding: var(--section-padding) var(--container-padding);
+    padding: 25px 25px;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -426,7 +426,7 @@ body {
     top: 0;
     left: 0;
 }
-.parallax__visuals {
+.hero_visuals {
     object-fit: cover;
     width: 100%;
     max-width: none;
