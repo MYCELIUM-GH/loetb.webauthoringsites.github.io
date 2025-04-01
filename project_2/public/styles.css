@@ -980,6 +980,10 @@ section.hero {
         z-index: -1;
         filter: opacity(0.4);
     }
+    .slider__container img {
+        object-fit: scale-down;
+        width: 95vw;
+    }
     .footer {
         width: 70%;
     }
