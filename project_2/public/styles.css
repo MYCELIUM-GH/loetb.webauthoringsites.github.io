@@ -5,10 +5,13 @@
     --page-height: 100vh;
     --header-height: 65px;
     --size-font: 12px;
+    /* MARGINS */
+    --text-left: 12vw;
     /* COLOURS */
     --main-colour-black-hex: #000000;
     --main-colour-deep-blue-hex: #1A365D;
     --font-colour-white-hex: #FFFFFF;
+    --font-colour-gray-hex: #737373;
     --color-dark-rgb: rgb(0, 0, 0);
         /* HERO PARAMS */
         --color-bg1: rgb(98, 90, 132);
@@ -24,6 +27,7 @@
 body {
     background-color: var(--main-colour-black-hex);
     color: var(--font-colour-white-hex);
+    font-family: Roboto, sans-serif;
     font-size: var(--size-font);
     margin: 0;
     padding: 0;
@@ -317,7 +321,7 @@ body {
     display: flex;
     position: relative;
     flex-direction: column;
-    margin-left: 12vw;
+    margin-left: var(--text-left);
     color: #fff;
     text-align: left;
 }
@@ -408,6 +412,35 @@ section.hero {
     display: flex;
     position: relative;
 }
+.hero-visuals {
+    object-fit: cover;
+    width: 100%;
+    max-width: none;
+    height: 120%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.hero-layers {
+    object-fit: cover;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.hero-layer-pattern {
+    pointer-events: none;
+    object-fit: cover;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    position: absolute;
+    top: calc(var(--header-height) + 29px);
+    left: 0;
+}
 .parallax {
     width: 100%;
     margin: auto;
@@ -432,15 +465,6 @@ section.hero {
     top: 0;
     left: 0;
 }
-.hero_visuals {
-    object-fit: cover;
-    width: 100%;
-    max-width: none;
-    height: 120%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 .parallax__placeholder {
     z-index: 0;
     opacity: 0;
@@ -451,16 +475,6 @@ section.hero {
     position: absolute;
     top: 0;
     left: 0;
-}
-.parallax__layers {
-    object-fit: cover;
-    width: 100%;
-    max-width: none;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: hidden;
 }
 .cover-copy {
     object-fit: cover;
@@ -543,16 +557,7 @@ section.hero {
     left: 40vw;
     z-index: 2;
 }
-.parallax__layer-pattern {
-    pointer-events: none;
-    object-fit: cover;
-    width: 100%;
-    max-width: none;
-    height: 100%;
-    position: absolute;
-    top: calc(var(--header-height) + 29px);
-    left: 0;
-}
+
 /* #endregion */
 
 /* #region ==== GRADIENT ANIMATIONS */
@@ -700,39 +705,44 @@ section.hero {
 
 /* #region ==== FOOTER */
 .landing-footer {
-    margin-top: 20vh;
-    border-top: 1px solid var(--font-colour-white-hex);
-    background-color:var(--main-colour-black-hex);
-    padding:45px 0 20px;
-    font-size:15px;
-    line-height:24px;
+    margin-top: 2vh;
+    background-color: var(--main-colour-black-hex);
+    padding: 45px 0 20px;
+    line-height: 24px;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 50px;
+    margin-left: var(--text-left);
+    max-width: 73vw;
+}
+.landing-footer h6 {
+  color: var(--font-colour-white-hex);
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+  letter-spacing: 2px;
+}
+.landing-footer p {
+    color: var(--font-colour-gray-hex);
+    text-align: justify;
+    font-size: 1rem;
+}
+.landing-footer hr {
+    border-top-color:#bbb;
+    opacity:0.5;
+    width: 75vw;
+}
+.landing-footer a {
+    font-size: 1rem;
     color:#737373;
 }
-.landing-footer hr
-{
-  border-top-color:#bbb;
-  opacity:0.5
-}
-.site-footer hr.small
-{
-  margin:20px 0
-}
-.site-footer h6
-{
-  color:#fff;
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
-}
-.site-footer a
-{
-  color:#737373;
-}
-.site-footer a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
+.landing-footer a:hover {
+    color:#3366cc;
+    text-decoration:none;
 }
 .footer-links
 {
@@ -772,7 +782,7 @@ section.hero {
 }
 .copyright-text
 {
-  margin:0
+  margin-top: 2vh;
 }
 @media (max-width:991px)
 {
@@ -908,14 +918,14 @@ section.hero {
         display: block;
     }
     /* HERO */
-    .parallax__layers {
+    .hero-layers {
         height: 100vh;
     }
     .parallax__fade {
         height: 50vh;
         margin-bottom: 20vh;
     }
-    .parallax__layer-pattern {
+    .hero-layer-pattern {
         width: 200vw;
         height: 100vh;
         object-fit: cover;
