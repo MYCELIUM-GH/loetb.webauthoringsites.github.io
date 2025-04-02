@@ -416,7 +416,7 @@ section.hero {
     object-fit: cover;
     width: 100%;
     max-width: none;
-    height: 120%;
+    height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -546,15 +546,15 @@ section.hero {
     position: fixed;
     inset: 0;
 }
-.parallax__layer-img {
+.hero-layer-img {
     pointer-events: none;
     object-fit: contain;
     width: 50%;
     max-width: none;
     height: 100%;
     position: absolute;
-    top: 16vh;
-    left: 40vw;
+    top: 25vh;
+    left: 42vw;
     z-index: 2;
 }
 
