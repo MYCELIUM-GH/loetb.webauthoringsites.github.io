@@ -705,10 +705,10 @@ section.products {
     background: white;
 }
 .first-item {
-    min-height: 50vh;
-    
+    min-height: 50vh; 
 }
 .black_honey_m1 {
+    margin-top: 85px;
     max-width: 97vw;
 }
 
