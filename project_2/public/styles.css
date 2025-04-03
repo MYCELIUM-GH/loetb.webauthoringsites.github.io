@@ -13,7 +13,7 @@
     --font-colour-white-hex: #FFFFFF;
     --font-colour-gray-hex: #737373;
     --color-dark-rgb: rgb(0, 0, 0);
-        /* HERO PARAMS */
+        /* HERO BACKGROUND PARAMS */
         --color-bg1: rgb(98, 90, 132);
         --color-bg2: rgb(60, 37, 210);
         --color1: 18, 113, 255;
@@ -163,6 +163,8 @@ body {
 }
 .affix {
     background-color: #000000;
+    border-bottom: 1px solid var(--font-colour-gray-hex);
+    transition: all 0.5s;
 }
 .myH2 {
 	text-align:center;
@@ -691,6 +693,25 @@ section.hero {
         opacity: 1;
     }
 }
+/* #endregion */
+
+/* #region ==== PRODUCTS */
+section.products {
+    min-height: 100vh;
+}
+.first-item-container {
+    position: relative;
+    min-height: 100vh;
+    background: white;
+}
+.first-item {
+    min-height: 50vh;
+    
+}
+.black_honey_m1 {
+    max-width: 97vw;
+}
+
 /* #endregion */
 
 /* #region ==== FOOTER */
