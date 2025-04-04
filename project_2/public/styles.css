@@ -34,6 +34,39 @@ body {
 }
 /* #endregion */
 
+/* #region ==== LOADER */
+#page-full {
+    display: none;
+}
+#loader {
+    display: block; 
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    border-top: 5px solid #8673cb;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    left: 50vw;
+    top: 50vh;
+    margin: -56px 0 0 -66px;
+    filter: drop-shadow(0 0 10px #ff00e6);
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.animate-bottom {
+    position: relative;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+  @keyframes animatebottom { 
+    from{ opacity:0 }
+    to{ opacity:1 }
+}
+/* #endregion */
+
 /* #region ==== NAVBAR */
 .nav {
     width: var(--page-width);
